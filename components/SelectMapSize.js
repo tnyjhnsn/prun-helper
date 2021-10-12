@@ -1,5 +1,5 @@
 import { useContext, html } from "../deps.js";
-import { MapCtx } from "../context/index.js";
+import { MapCtx } from "../context/ctx.js";
 import { sizeOptions } from "../src/map.js";
 import { Dropdown } from "../src/utils.js";
 

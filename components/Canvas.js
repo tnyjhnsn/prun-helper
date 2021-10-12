@@ -4,7 +4,7 @@ import {
   SelectStarsCtx,
   MapCtx,
   FilterCtx
-} from "../context/index.js";
+} from "../context/ctx.js";
 import { pathFinder } from "../src/map.js";
 
 export const Canvas = ({ width, height, draw }) => {

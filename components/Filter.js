@@ -1,11 +1,11 @@
 import { useContext, html, Fragment } from "../deps.js";
-import { Checkbox, Dropdown } from "../src/utils.js";
 import {
   UniverseCtx,
   MapCtx,
   FilterCtx
-} from "../context/index.js";
+} from "../context/ctx.js";
 import { applyFilters } from "../src/filter.js";
+import { Checkbox, Dropdown } from "../src/utils.js";
 
 const surfaceOptions = ["Rocky", "Gaseous", "Both"].map(o => ({ k: o, v: o }));
 const envOptions = ["Normal", "Low", "High", "Ignore"].map(o => ({ k: o, v: o }));

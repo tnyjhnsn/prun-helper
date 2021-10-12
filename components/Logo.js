@@ -1,9 +1,7 @@
 import { html, Fragment } from "../deps.js";
 
 export const Logo = ({ isLoading }) => {
-
   const loadingText = html`<h3>Calculating Star and Planet data. Please wait...</h3>`
-
   return html`
     <${Fragment}>
       <div className="logo">

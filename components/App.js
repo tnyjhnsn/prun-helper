@@ -1,7 +1,7 @@
 import { useContext, useState, useEffect, html, Fragment } from "../deps.js";
 import { Canvas } from "./Canvas.js";
 import { Panel1, Panel2, Panel3, Panel4 } from "./Panels.js";
-import { UniverseCtx, FilterCtx } from "../context/index.js";
+import { UniverseCtx, FilterCtx } from "../context/ctx.js";
 import { createStarData } from "../src/stars.js";
 import { applyFilters } from "../src/filter.js";
 import { createPlanetData, planetNamesList } from "../src/planets.js";

@@ -4,7 +4,7 @@ import {
   UniverseCtx,
   SelectStarsCtx,
   FilterCtx
-} from "../context/index.js";
+} from "../context/ctx.js";
 import { starFromName } from "../src/stars.js";
 
 const TOP_HIT_LIMIT = 8;

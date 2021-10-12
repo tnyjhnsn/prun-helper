@@ -1,5 +1,5 @@
 import { useContext, html } from "../deps.js";
-import { UniverseCtx, FilterCtx } from "../context/index.js";
+import { UniverseCtx, FilterCtx } from "../context/ctx.js";
 import { buildBase } from "../src/planets.js";
 
 export const PlanetDetails = ({ planet, res, headingClick, highlightEnv }) => {

@@ -1,19 +1,16 @@
 import { useContext, html, Fragment } from "../deps.js";
-import { UniverseCtx, SelectStarsCtx } from "../context/index.js";
 import { PlanetDetails } from "./PlanetDetails.js";
+import { UniverseCtx, SelectStarsCtx } from "../context/ctx.js";
 
 export const System = () => {
   const { planetData: { planets, resources } } = useContext(UniverseCtx);
   const { selectStarsData: { selectedStar } } = useContext(SelectStarsCtx);
-
   const filterPlanets = planets.filter(p => p.sysId === selectedStar.sysId).sort();
-
   const handleHeadingClick = (e) => {
     e.preventDefault();
     let hidden = e.target.nextSibling.hidden;
     e.target.nextSibling.hidden = !hidden;
   };
-
   return html`
   <${Fragment}>
     ${ selectedStar.name ? html`

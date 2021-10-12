@@ -1,5 +1,5 @@
 import { html, useState, useContext } from "../deps.js";
-import { UniverseCtx, SelectStarsCtx } from "../context/index.js";
+import { UniverseCtx, SelectStarsCtx } from "../context/ctx.js";
 import { starFromName } from "../src/stars.js";
 
 export const Search = () => {
